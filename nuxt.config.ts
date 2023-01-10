@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
     modules: ['nuxt-icon'],
     runtimeConfig: {
-        serviceId: '',
-        templateId: '',
-        keyPublic: '',
         public: {
             apiBase: '/api',
             serviceId: '',
