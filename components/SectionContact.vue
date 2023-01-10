@@ -13,7 +13,7 @@
     <aside>
       <form ref="form" @submit.prevent="sendEmail">
         <div class="form-group">
-          <input type="text" name="name" id="name" placeholder=" " value="testval">
+          <input type="text" name="name" id="name" placeholder=" ">
           <label for="name">Nom</label>
         </div>
         <div class="form-group">
