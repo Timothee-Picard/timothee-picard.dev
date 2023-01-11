@@ -4,7 +4,7 @@
       <div class="content">
         <p>
           <Icon name="fa6-regular:envelope" />
-          <span>timothee-picard@outlook.fr</span></p>
+          <span>dev.timothee.picard@gmail.com</span></p>
         <p>
           <Icon name="ph:phone-bold" />
           <span>+33 6 89 65 50 88</span></p>
