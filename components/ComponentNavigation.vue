@@ -2,33 +2,34 @@
   <nav>
     <ul>
       <li>
-        <a href="#accueil">
+        <NuxtLink to="/#accueil">
           <span>Accueil</span>
           <div class="circle"></div>
-        </a>
+        </NuxtLink>
       </li>
       <li>
-        <a href="#competences">
+        <NuxtLink to="/#competences">
           <span>Compétences</span>
-          <div class="circle"></div></a>
+          <div class="circle"></div>
+        </NuxtLink>
       </li>
       <li>
-        <a href="#experiences">
+        <NuxtLink to="/#experiences">
           <span>Expériences</span>
           <div class="circle"></div>
-        </a>
+        </NuxtLink>
       </li>
       <li>
-        <a href="#diplomes">
+        <NuxtLink to="/#diplomes">
           <span>Diplômes</span>
           <div class="circle"></div>
-        </a>
+        </NuxtLink>
       </li>
       <li>
-        <a href="#contact">
+        <NuxtLink to="/#contact">
           <span>Contact</span>
           <div class="circle"></div>
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </nav>

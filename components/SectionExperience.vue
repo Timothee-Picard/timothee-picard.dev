@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="content">
-      <h3>Expérience profesionelle</h3>
+      <h3>Mes expériences professionnelle</h3>
       <component-experience date1="2020" date2="2023" default="true">
         <template #title>Analyste programmeur - Atnos</template>
         En alternance, je participe à la création de l'interface utilisateur de
@@ -27,9 +27,6 @@
 
 <style scoped lang="scss">
 @import "../assets/var";
-h3 {
-  font-size: 1.5em;
-}
 section {
   position: relative;
   background: $color-dark-green;
