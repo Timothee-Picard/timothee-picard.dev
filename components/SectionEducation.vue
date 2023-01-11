@@ -11,9 +11,10 @@
       </div>
       <div class="rightBloc">
         <h4>Développeur FrontEnd - 2023</h4>
-        <p>
-          Lorem ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a
-          ipsum a az a ipsum a az a ipsum a az a ip a az a ipsum a az a ip a az a
+        <p contenteditable>
+          J'ai réalisé différents projets web qui m'ont permis de reprendre les bases du développement en y ajoutant les
+          bonnes pratiques. J'ai gagné en assurance grâce aux nombreuses présentations que j'ai dû réaliser et enfin
+          j'ai appris à utiliser React Js
         </p>
       </div>
     </div>
@@ -28,8 +29,9 @@
       <div class="rightBloc">
         <h4>DIMI - 2020</h4>
         <p>
-          Lorem ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a
-          ipsum a az a ipsum a az a ipsum a az a ip a az a ipsum a az a ip a az a
+          J'ai pu découvrir plusieurs aspects: le graphisme avec Photoshop et Illustrator, le montage vidéo,
+          la photographie, la gestion des réseaux, le marketing et enfin la partie qui m'a le plus plu le développement
+          web tout en restant organisé grâce à la gestion de projet
         </p>
       </div>
     </div>
@@ -44,9 +46,9 @@
       <div class="rightBloc">
         <h4>Bacalauréat STI2D - 2017</h4>
         <p>
-          Lorem ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a ipsum a az a
-          ipsum a az a ipsum a az a ipsum a az a ip a az a ipsum a az a ip a az a
-          Lorem ipsum a az a ipsum a az a ipsum a az
+          J'y ai réalisé pour mon projet final une application mobile pouvant communiquer en bluetooth avec une éolienne.
+          J'ai dû crée la carte électronique pour relever les mesures, puis envoyer les données relevées et calculées
+          par un arduino à une application mobile
         </p>
       </div>
     </div>
@@ -65,10 +67,8 @@ section {
 }
 .card {
   display: flex;
-}
-.leftBloc {
-  position: relative;
-  width: 250px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 h4 {
   text-transform: uppercase;
@@ -97,9 +97,26 @@ h4 {
     font-weight: 700;
   }
 }
+.leftBloc {
+  position: relative;
+  width: 200px;
+  min-height: 100px;
+  @media only screen and (max-width: 694px) {
+    .content {
+      color: $color-dark-green;
+      background: none;
+      box-shadow: none;
+      transform: translate(0, -20px);
+    }
+    .angle {
+      display: none;
+    }
+  }
+}
 .rightBloc {
   background-color: white;
-  width: 100%;
+  width: min-content;
+  min-width: 450px;
   min-height: 140px;
   flex-grow: 1;
   box-shadow: rgba(48, 94, 111, 0.35) 0px 5px 10px;
