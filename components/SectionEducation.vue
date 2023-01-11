@@ -11,7 +11,7 @@
       </div>
       <div class="rightBloc">
         <h4>Développeur FrontEnd - 2023</h4>
-        <p contenteditable>
+        <p>
           J'ai réalisé différents projets web qui m'ont permis de reprendre les bases du développement en y ajoutant les
           bonnes pratiques. J'ai gagné en assurance grâce aux nombreuses présentations que j'ai dû réaliser et enfin
           j'ai appris à utiliser React Js
@@ -116,7 +116,6 @@ h4 {
 .rightBloc {
   background-color: white;
   width: min-content;
-  min-width: 450px;
   min-height: 140px;
   flex-grow: 1;
   box-shadow: rgba(48, 94, 111, 0.35) 0px 5px 10px;
@@ -125,6 +124,9 @@ h4 {
   padding: 1em 1em 1em calc(1em + 20px);
   p {
     margin-top: 0.5em;
+  }
+  @media only screen and (max-width: 694px) {
+    width: max-content;
   }
 }
 .angle {
