@@ -4,10 +4,15 @@
       <div class="content">
         <p>
           <Icon name="fa6-regular:envelope" />
-          <span>dev.timothee.picard@gmail.com</span></p>
+          <span>dev.timothee.picard@gmail.com</span>
+        </p>
         <p>
           <Icon name="ph:phone-bold" />
-          <span>+33 6 89 65 50 88</span></p>
+          <span>+33 6 89 65 50 88</span>
+        </p>
+        <div class="button">
+          <a href="/CV_Timothée Picard.pdf" download>Télécharger mon CV</a>
+        </div>
       </div>
     </div>
     <aside>
@@ -174,6 +179,13 @@ section {
     margin: auto;
     font-size: 1.5em;
     color: $color-white;
+    .button {
+      margin: auto;
+      a {
+        padding: 0.5em 1em;
+        border: 1px solid $color-white;
+      }
+    }
     @media only screen and (max-width: 767px)
     {
       font-size: 1em;
