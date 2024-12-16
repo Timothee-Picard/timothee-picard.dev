@@ -13,11 +13,13 @@ WORKDIR /app
 ENV PORT=3000
 ENV NODE_ENV=production
 
+RUN apk add --no-cache curl
+
 COPY --from=build /app/.output ./.output
 
 EXPOSE 3000
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-  CMD wget -q -T 5 -O - http://localhost:3000 || exit 1
+  CMD curl -f http://localhost:3000 || exit 1
 
 CMD ["node", ".output/server/index.mjs"]
