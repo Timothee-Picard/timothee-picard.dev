@@ -13,6 +13,8 @@ WORKDIR /app
 ENV PORT=3000
 ENV NODE_ENV=production
 
+RUN apk add --no-cache curl
+
 COPY --from=build /app/.output ./.output
 
 EXPOSE 3000
